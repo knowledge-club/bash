@@ -65,7 +65,7 @@ mkdir /Users/darlanmendonca/Desktop/test
 ```
 
 ```sh
-# -p is an flag, to create directories (in this case, directory 'parent'), case their not exists
+# -p is an flag(option), to create directories (in this case, directory 'parent'), case their not exists
 mkdir -p /Users/darlanmendonca/Desktop/test/parent/children
 ```
 
