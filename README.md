@@ -4,6 +4,11 @@ Beginner in bash/shell-script?
 
 Below you find some help to commands that you will probaly need.
 
+- [PWD](#pwd)
+- [CD](#cd)
+- [MKDIR](#mkdir)
+- [LS](#ls)
+
 ### PWD
 Show where you are in bash. The directory specifically. The command is an abbreviation to ***print working directory***.
 
@@ -73,7 +78,7 @@ mkdir -p /Users/darlanmendonca/Desktop/test/parent/children
 Means ***list***. Useful to see what files exists in a path/current directory.
 
 ```sh
-# I'm in '~', teh command below list files in my current directory
+# I'm in '~', the command below list files in my current directory
 ls
 ```
 
