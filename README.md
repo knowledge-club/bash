@@ -9,6 +9,7 @@ Below you find some help to commands that you will probaly need.
 - [MKDIR](#mkdir)
 - [LS](#ls)
 - [TOUCH](#touch)
+- [RM](#rm)
 
 ### PWD
 Show where you are in bash. The directory specifically. The command is an abbreviation to ***print working directory***.
@@ -129,5 +130,22 @@ touch index.html
 touch index.thml style.css app.js
 ```
 
+### RM
+Means remove, is used to delete files or directories. **But be careful, this command dont send file to trash**, they delete and dont have how undo.
+
+```sh
+# delete a file called index.html in current directory
+rm index.html
+```
+
+```sh
+# delete multiples files in a single command
+rm index.html style.css
+```
+
+```sh
+# finally to delete a directory, you need use flags r and f, respectively, both are abbreviation to recursive and force
+rm -rf app
+```
 
 
