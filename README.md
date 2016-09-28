@@ -8,6 +8,7 @@ Below you find some help to commands that you will probaly need.
 - [CD](#cd)
 - [MKDIR](#mkdir)
 - [LS](#ls)
+- [TOUCH](#touch)
 
 ### PWD
 Show where you are in bash. The directory specifically. The command is an abbreviation to ***print working directory***.
@@ -113,6 +114,19 @@ ls ~/Desktop/projeto1/*.js
 ```sh
 # the double **, is to recursevely list inside projeto1
 ls ~/Desktop/projeto1/**/*.js
+```
+
+### TOUCH
+This command is used to create files.
+
+```sh
+# create a file called index.html
+touch index.html
+```
+
+```sh
+# create files index.html, style.css and app.js in just one command
+touch index.thml style.css app.js
 ```
 
 
