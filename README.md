@@ -10,6 +10,11 @@ Below you find some help to commands that you will probaly need.
 - [LS](#ls)
 - [TOUCH](#touch)
 - [RM](#rm)
+- [WHEREIS](#whereis)
+- [WHICH](#which)
+- [CAT](#cat)
+- [ECHO](#echo)
+- [MAN](#man)
 
 ### PWD
 Show where you are in bash. The directory specifically. The command is an abbreviation to ***print working directory***.
@@ -148,4 +153,57 @@ rm index.html style.css
 rm -rf app
 ```
 
+### WHEREIS
+
+Used to localize programs within the filesystem.
+
+```sh
+# Locate program php within the filesystem
+whereis php
+```
+
+### WHICH
+
+Same as _WHEREIS_ but locate programs inside the user's path.
+
+```sh
+# Locate program php within the users path
+which php
+```
+
+### CAT
+
+Display contents of a file, or files.
+
+`cat` will sequentially read and concatenate the contents of the input filenames and output them to stdout.
+
+```sh
+# Read and display contents of .gitignore file
+cat .gitignore
+```
+
+```sh
+# Read and displays the contents of multiple files
+cat .gitignore .bowerrc .babelrc yourfile.css
+```
+
+### ECHO
+
+Prints out the arguments to standard output.
+
+Echo is often used to pass on parameters to other commands' inputs, since it writes out to standard output, its output can be piped to another command's input stream.
+
+```sh
+# Prints "Hello" to the screen
+echo "Hello"
+```
+
+### MAN
+
+Shows the full description of a command.
+
+```sh
+# Shows help for `cat` command
+man cat
+```
 
