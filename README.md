@@ -131,7 +131,7 @@ touch index.thml style.css app.js
 ```
 
 ### RM
-Means remove, is used to delete files or directories. **But be careful, this command dont send file to trash**, they delete and dont have how undo.
+Means remove, is used to delete files or directories. <span color="red">**But be careful, this command dont send file to trash**</span>, they delete and dont have how undo.
 
 ```sh
 # delete a file called index.html in current directory
