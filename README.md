@@ -15,6 +15,12 @@ Below you find some help to commands that you will probaly need.
 - [CAT](#cat)
 - [ECHO](#echo)
 - [MAN](#man)
+- [MV](#mv)
+- [CP](#cp)
+- [WC](#wc)
+- [WHOAMI](#whoami)
+- [PASSWD](#passwd)
+- [DATE](#date)
 
 ### PWD
 Show where you are in bash. The directory specifically. The command is an abbreviation to ***print working directory***.
@@ -207,3 +213,81 @@ Shows the full description of a command.
 man cat
 ```
 
+### MV
+
+The `mv` command can be used to **move** or **rename** files.  
+
+```sh
+# Moves the foo.txt to bar folder
+mv foo.txt bar/
+```
+
+```sh
+# Renames the foo.txt to bar.txt
+mv foo.txt bar.txt
+```
+
+### CP
+
+The `cp` command is used to make copy of files and directories
+
+```sh
+# Creates a copy of foo.txt named bar.txt in the same folder you are in
+cp foo.txt bar.txt
+# If bar.txt already exists it will be overwritten without a confirmation
+# If you want to confirm first you can use the -i flag
+cp -i foo.txt bar.txt
+```
+
+```sh
+# Creates a copy of foo.txt in bar folder
+cp foo.txt bar/
+```
+
+```sh
+# Creates a copy of foo.txt in bar folder with the name test.txt
+cp foo.txt bar/test.txt
+```
+
+```sh
+# Creates a copy of foo folder structure into bar folder
+cp -R foo bar
+```
+
+### WC
+
+The `wc` command returns the number of lines, words and characters there are in a file.
+
+```sh
+# Outputs the number of lines, words and characters in foo.txt file
+# The output will be something like 2 3 18 foo.txt where:
+# 2 is the number of lines, 3 is the number of words and 18 is the number of characters in the file
+wc foo.txt
+```
+
+### WHOAMI
+
+The `whoami` command returns your username.
+
+```sh
+# Outputs your username
+whoami
+```
+
+### PASSWD
+
+The `passwd` command is used to change your password.
+
+```sh
+# You will be asked to type your current password and after this you have to type your new password twice
+passwd
+```
+
+### DATE
+
+The `date` command returns the current date and time
+
+```sh
+# Outputs current date and time
+date
+```
