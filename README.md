@@ -15,6 +15,19 @@ Below you find some help to commands that you will probaly need.
 - [CAT](#cat)
 - [ECHO](#echo)
 - [MAN](#man)
+- [CHOWN](#chown)
+- [CHMOD](#chmod)
+- [HEAD](#head)
+- [TAIL](#tail)
+- [FIND](#find)
+- [RMDIR](#rmdir)
+- [UNLINK](#unlink)
+- [MV](#mv)
+- [CP](#cp)
+- [SUDO](#sudo)
+- [TRACEROUTE](#traceroute)
+- [KILL](#kill)
+- [LN](#ln)
 
 ### PWD
 Show where you are in bash. The directory specifically. The command is an abbreviation to ***print working directory***.
@@ -207,3 +220,149 @@ Shows the full description of a command.
 man cat
 ```
 
+### CHOWN
+
+Comes from _change owner_. It can change file/folder owners and groups.
+
+```sh
+# Changes the owner of the file called `file.md` to `wheel` and the group to `root`
+chown wheel:group file.md
+```
+
+### CHMOD
+
+Comes from _change modes_. It is used to change the access control of a file or folder in order to allow owner, users or everyone to _read/write/exec_ a file.
+
+Permissions on unix-based systems are based on bitcounts. We have 3 bits, one for read, one for write and one for exec, making it `000` (or _read write exec_), if we set `001`, by summing the bits we'll have `1` (because `001=1`), if we want to set all permissions to a file we can simply set `111` (and by summing we have `7` because the binary sum of `111` is `7`).
+
+On another part we have to set permissions for the users. The order is _owner_ _users in group_ _users not in group_, so we can have 3 sets of bits `000 000 000` which means `owner user guest`. So we can set permissions by concatenating sums of bits like `654`, this means: Owner can read-write (`110=6`), users can read and execute (`101=5`) and guests can only read (`100=4`).
+
+```sh
+# Sets the permission to owner can do anything, users can read and execute and guests only read the file "permissions.txt"
+chmod 754 permissions.txt
+```
+
+### TAIL
+
+Gets the ending content of a file and prints it out to the screen.
+
+```sh
+# Get the ending lines of error.log
+tail error.log
+```
+
+There's also a possibility to read a stream of data in realtime, for instance, to read the apache error logs in real time while the server is executing.
+
+```sh
+tail -f apache/error.log
+```
+
+### HEAD
+
+The oposite of `tail`, gets the first part of a file.
+
+```sh
+# Gets the first lines of error.log
+head error.log
+```
+
+### FIND
+
+Searches a specific directory for a pattern.
+
+```sh
+# Finds the git directory recursively within a root folder
+find . -name .git -type d
+```
+
+### SUDO
+
+Grants `root` privileges to the current command.
+
+```sh
+# Runs ls command as root
+sudo ls
+```
+
+```sh
+# Change the current user to root
+sudo su
+```
+
+### TRACEROUTE
+
+Traces the internet route of a domain or IP (equivalent to `tracert` on Windows)
+
+```sh
+# Traces the route to domain.com
+traceroute domain.com
+```
+
+### KILL
+
+Send a signal to a process for it to finish or be killed.
+
+```sh
+# Kills process with ID 342
+kill -9 342
+```
+
+### RMDIR
+
+Removes an empty directory.
+
+```sh
+# Removes newly created folder "fdr"
+rmdir fdr
+```
+
+### UNLINK
+
+Removes a single file
+
+```sh
+# Deletes file "the_file.md"
+unlink the_file.md
+```
+
+### LN
+
+Creates links between files, can be seen as "shortcuts" of Windows users.
+
+```sh
+# Creates a "Shortcut" to file /bin/ls
+ln -s ./list /bin/ls
+```
+
+### CP
+
+Copies a file to another location.
+
+```sh
+# Copies the file "file.md" to the folder "files""
+cp file.md /files/
+```
+
+Can also be used to create a copy of files in the `pwd` if you specify a __file__ name and not a __folder__ name.
+
+```sh
+# Creates a second file called "b.md" from "a.md"
+cp a.md b.md
+```
+
+### MV
+
+Moves or renames a file.
+
+- If another directory is specified, then the file will be moved acording to the argument
+- If the same directory is specified, but another filename, the file will be renamed
+
+```sh
+# Moving file "a.txt" to "/b" directory
+mv a.txt /b/a.txt
+```
+
+```sh
+# Renames file "a.txt" to "b.txt"
+mv a.txt b.txt
+```
