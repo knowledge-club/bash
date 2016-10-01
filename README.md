@@ -6,6 +6,9 @@ Below you find some help to commands that you will probaly need.
 
 - [MAN](#man)
 - [PWD](#pwd)
+- [WHOAMI](#whoami)
+- [PASSWD](#passwd)
+- [DATE](#date)
 - [CD](#cd)
 - [LS](#ls)
 - [MKDIR](#mkdir)
@@ -50,6 +53,33 @@ will return a path like this
 
 ```sh
 /Users/darlanmendonca/projects
+```
+
+## WHOAMI
+
+The `whoami` command returns your username.
+
+```sh
+# Outputs your username
+whoami
+```
+
+## PASSWD
+
+The `passwd` command is used to change your password.
+
+```sh
+# You will be asked to type your current password and after this you have to type your new password twice
+passwd
+```
+
+## DATE
+
+The `date` command returns the current date and time
+
+```sh
+# Outputs current date and time
+date
 ```
 
 ## CD
