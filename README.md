@@ -17,17 +17,17 @@ Below you find some help to commands that you will probaly need.
 - [MAN](#man)
 - [CHOWN](#chown)
 - [CHMOD](#chmod)
-- [HEAD](#head)
 - [TAIL](#tail)
+- [HEAD](#head)
 - [FIND](#find)
-- [RMDIR](#rmdir)
-- [UNLINK](#unlink)
-- [MV](#mv)
-- [CP](#cp)
 - [SUDO](#sudo)
 - [TRACEROUTE](#traceroute)
 - [KILL](#kill)
+- [RMDIR](#rmdir)
+- [UNLINK](#unlink)
 - [LN](#ln)
+- [CP](#cp)
+- [MV](#mv)
 
 ### PWD
 Show where you are in bash. The directory specifically. The command is an abbreviation to ***print working directory***.
