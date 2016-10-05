@@ -28,6 +28,6 @@ The `README.md` contains only the Table of Contents, so there's no need to chang
 That is, when you contribute with a new command
 
 1. Create a file for the command, i.e. ```rm.md```.
-3. Open a Pull Request with the title "[New] (your command)"
+2. Open a Pull Request with the title "[New] (your command)"
 
 That's it! Easy isn't it?
