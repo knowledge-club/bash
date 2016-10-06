@@ -22,3 +22,9 @@ mkdir /Users/darlanmendonca/Desktop/test
 # -p is an flag(option), to create directories (in this case, directory 'parent'), case their not exists
 mkdir -p /Users/darlanmendonca/Desktop/test/parent/children
 ```
+
+```sh
+# if you need spaces into directory name, use "\ "(slash-space)
+# create a directory named "directory with spaces"
+mkdir directory\ with\ spaces
+```
