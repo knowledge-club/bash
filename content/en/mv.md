@@ -14,3 +14,8 @@ mv a.txt /b/a.txt
 # Renames file "a.txt" to "b.txt"
 mv a.txt b.txt
 ```
+
+```sh
+# Renames file "file.txt" to "file with spaces.txt"
+mv file.txt file\ with\ spaces.txt
+```
