@@ -13,3 +13,9 @@ Can also be used to create a copy of files in the `pwd` if you specify a __file_
 # Creates a second file called "b.md" from "a.md"
 cp a.md b.md
 ```
+
+```sh
+# Copy all files from ~/some_folder to ~/Documents/another_folder"
+# You're in ~/some_folder
+cp * ~/Documents/another_folder
+```
