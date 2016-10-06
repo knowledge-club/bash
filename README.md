@@ -1,4 +1,4 @@
-# Bash basics
+![Bash](icon.png)
 
 Beginner in bash/shell-script?
 
