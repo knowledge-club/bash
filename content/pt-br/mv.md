@@ -14,3 +14,8 @@ mv a.txt /b/a.txt
 # Renomeia o arquivo "a.txt" para "b.txt"
 mv a.txt b.txt
 ```
+
+```sh
+# Renomeia o arquivo "titulo.txt" para "titulo com espaços.txt"
+mv titulo.txt titulo\ com\ espaços.txt
+```
