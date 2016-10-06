@@ -22,3 +22,9 @@ mkdir /Users/darlanmendonca/Desktop/test
 # -p é uma flag(option), para criar diretórios (no nosso caso, pasta 'parent'), caso estes não existam
 mkdir -p /Users/darlanmendonca/Desktop/test/parent/children
 ```
+
+```sh
+# se você precisa de espaços no nome da pasta, use "\ "(barra invertida + espaço)
+# criando uma pasta chamada "nome com espaços"
+mkdir nome\ com\ espaços
+```
