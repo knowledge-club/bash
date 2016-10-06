@@ -13,3 +13,9 @@ Pode também ser usado para criar uma cópia dos arquivos no `pwd` se você espe
 # Cria um segundo arquivo chamado "b.md" do "a.md"
 cp a.md b.md
 ```
+
+```sh
+# Copia todos os arquivos de ~/alguma_pasta para ~/Documents/outra_pasta"
+# Você está em ~/alguma_pasta
+cp * ~/Documents/outra_pasta
+```
