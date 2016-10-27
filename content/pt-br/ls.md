@@ -13,7 +13,7 @@ ls /Users
 ```
 
 ```sh
-# Se você quer mostrar arquivos ocultos, use a flag -a
+# Se você quer mostrar arquivos ocultos, use a flag -a, é uma abreviação para 'all'
 ls -a /
 ```
 
