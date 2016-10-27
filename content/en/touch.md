@@ -17,3 +17,8 @@ touch index.thml style.css app.js
 # create a file named "file spaces.txt"
 touch file\ spaces.txt
 ```
+
+```sh
+# or just use single or double quotes
+mkdir 'file spaces.txt'
+```
