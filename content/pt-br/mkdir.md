@@ -28,3 +28,8 @@ mkdir -p /Users/darlanmendonca/Desktop/test/parent/children
 # criando uma pasta chamada "nome com espaços"
 mkdir nome\ com\ espaços
 ```
+
+```sh
+# ou apenas use aspas simples ou duplas
+mkdir 'nome com espaço'
+```

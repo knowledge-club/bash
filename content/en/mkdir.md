@@ -28,3 +28,8 @@ mkdir -p /Users/darlanmendonca/Desktop/test/parent/children
 # create a directory named "directory with spaces"
 mkdir directory\ with\ spaces
 ```
+
+```sh
+# or just use single or double quotes
+mkdir 'name with space'
+```

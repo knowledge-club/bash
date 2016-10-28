@@ -17,3 +17,8 @@ touch index.thml style.css app.js
 # cria um arquivo chamado "nome com espaço.txt"
 touch nome\ com\ espaço.txt
 ```
+
+```sh
+# ou apenas use aspas simples ou duplas
+mkdir 'nome com espaço.txt'
+```
