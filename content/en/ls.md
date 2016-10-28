@@ -13,7 +13,7 @@ ls /Users
 ```
 
 ```sh
-# If you want see hidden files, use the flag -a
+# If you want see hidden files, use the flag -a, means 'all'
 ls -a /
 ```
 
