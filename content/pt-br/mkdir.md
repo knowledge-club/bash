@@ -30,6 +30,6 @@ mkdir nome\ com\ espaços
 ```
 
 ```sh
-# ou apenas use aspas duplas ou aspas simples
+# ou apenas use aspas simples ou duplas
 mkdir 'nome com espaço'
 ```
